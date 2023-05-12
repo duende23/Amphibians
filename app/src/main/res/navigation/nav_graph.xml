@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/amphibianListFragment">
+
+    <fragment
+        android:id="@+id/amphibianListFragment"
+        android:name="com.villadevs.amphibians.AmphibianListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_amphibian_list">
+        <action
+            android:id="@+id/action_amphibianListFragment_to_amphibianDetailFragment"
+            app:destination="@id/amphibianDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/amphibianDetailFragment"
+        android:name="com.villadevs.amphibians.AmphibianDetailFragment"
+        android:label="fragment_amphibian_detail"
+        tools:layout="@layout/fragment_amphibian_detail" />
+</navigation>
